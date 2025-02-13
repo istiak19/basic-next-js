@@ -14,8 +14,10 @@ const NavBar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><Link href='/'>Home</Link></li>
                         {/* <li><Link href='/about'>About</Link></li> */}
-                        <li><Link href='/user-dashboard'>DashBoard</Link></li>
+                        {/* <li><Link href='/user-dashboard'>DashBoard</Link></li> */}
                         <li><Link href='/posts'>Posts</Link></li>
+                        <li><Link href='/user'>Users</Link></li>
+                        <li><Link href='/user/addUser'>User Add</Link></li>
                         <li><Link href='/meals'>Meals</Link></li>
                         <li><Link href='/services'>Services</Link></li>
                         <li><Link href='/login'>Login</Link></li>
