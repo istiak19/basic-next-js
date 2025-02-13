@@ -6,7 +6,7 @@ export function middleware(request) {
     // console.log(cookie.value)
     let isServices = request.nextUrl.pathname.startsWith('/services')
     let isRole = {
-        role: 'user',
+        role: 'admin',
         email: 'didi@gmail.com'
     }
     if (isServices && isRole.role !== 'admin') {
