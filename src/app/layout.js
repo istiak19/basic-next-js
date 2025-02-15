@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import NextAuthProvider from "@/provider/nextAuthProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,19 +30,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={roboto.className}
-      >
-        <nav>
-          <NavBar></NavBar>
-        </nav>
-        <main className="min-h-svh">
-          {children}
-        </main>
-        <footer>
-          <Footer></Footer>
-        </footer>
-      </body>
+      <NextAuthProvider>
+        <body
+          className={roboto.className}
+        >
+          <nav>
+            <NavBar></NavBar>
+          </nav>
+          <main className="min-h-svh">
+            {children}
+          </main>
+          <footer>
+            <Footer></Footer>
+          </footer>
+        </body>
+      </NextAuthProvider>
     </html>
   );
 }
