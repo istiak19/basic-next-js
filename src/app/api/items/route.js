@@ -1,5 +1,6 @@
+"use server"
 import dbConnect from "@/utiles/dbConnect"
-import { revalidatePath } from "next/cache";
+// import { revalidatePath } from "next/cache";
 
 export async function POST(request) {
     const res = await request.json()

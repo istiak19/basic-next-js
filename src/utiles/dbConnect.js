@@ -1,3 +1,4 @@
+"use server"
 import { MongoClient, ServerApiVersion } from "mongodb";
 
 const dbConnect = (collectionName) => {

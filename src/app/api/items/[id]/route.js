@@ -1,3 +1,4 @@
+"use server"
 import dbConnect from "@/utiles/dbConnect";
 import { ObjectId } from "mongodb";
 

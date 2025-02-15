@@ -1,3 +1,4 @@
+"use client"
 import InputForm from './components/InputForm.jsx'
 
 const UserAdd = () => {
